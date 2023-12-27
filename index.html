@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Video</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main class="Container">
+        <section class="Video-container" id="SlideVideo">
+            <video src="./assets/Videos/video1.mp4" autoplay loop muted class="videos-video active"></video>
+            <video src="./assets/Videos/video2.mp4" autoplay loop muted class="videos-video"> </video>
+            <video src="./assets/Videos/video3.mp4" autoplay loop muted class="videos-video"></video>
+            <video src="./assets/Videos/video4.mp4" autoplay loop muted class="videos-video"></video>
+        </section>
+
+        <section class="Principal__container">
+                <header class="Principal__header">
+                    <a href="#" class="Principal__logo">World</a>
+
+                    <span class="Menu-responsive" onclick="ToggleActive()"></span>
+                    <ul class="principal__list">
+                        
+                        <li class="principal__icons"><a href="#" class="icons-active">Home</a></li>
+
+                        <li class="principal__icons"><a href="#">Destination</a></li>
+
+                        <li class="principal__icons"><a href="#">About</a></li>
+
+                        <li class="principal__icons"><a href="#">Contact</a></li>
+                    </ul>
+
+                    
+                </header>
+
+                <div class="Principal__content">
+                    <div class="content__container" id="Texts">
+
+                    <article class="active article-txt">
+                         <h2 class="Content__title">Tokyo</h2>
+                         <p class="Content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, veritatis itaque? Vitae reprehenderit minus, nobis, velit accusamus voluptate dolores recusandae molestias saepe nihil atque vero quidem voluptatum ullam omnis alias.</p>
+                    </article>
+
+                    <article class="article-txt">
+                        <h2 class="Content__title">Paris</h2>
+                        <p class="Content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem inventore dolores harum, pariatur ad incidunt ab, iusto quasi blanditiis eos totam? Architecto ex fugiat ea atque adipisci. Repellendus, vel?</p>
+                   </article>
+
+                   <article  class="article-txt">
+                    <h2 class="Content__title">Egypt</h2>
+                    <p class="Content__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda odio voluptatum mollitia dolor atque harum dolorum sint omnis quod optio ullam, in suscipit culpa dolorem aliquid beatae nam ad officiis.
+                    Iste, eum aut? Ea ut repudiandae laudantium .</p>
+               </article>
+
+                <article  class="article-txt">
+                <h2 class="Content__title">Miami</h2>
+                <p class="Content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, veritatis itaque? Vitae reprehenderit minus, nobis, velit accusamus voluptate dolores recusandae molestias saepe nihil atque vero quidem voluptatum ullam omnis alias.</p>
+           </article>
+
+        </div>
+                </div>
+
+                <ul class="Principal__controls">
+                    <li class="controls__list" onclick="SlidePrev(), prevSlideText();"><img src="./assets/Videos/left.png" alt=""></li>
+                    <li class="controls__list" onclick="SlideNext(), nextSlideText();"><img src="./assets/Videos/right.png" alt=""></li>
+                </ul>
+        </section>
+    </main>
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
